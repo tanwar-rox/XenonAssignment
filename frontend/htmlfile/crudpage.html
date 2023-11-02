@@ -1,0 +1,67 @@
+<!DOCTYPE >
+<html>
+<head>
+    <title>Email Management Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style2.css">
+</head>
+<body>
+   
+
+    
+    <div class="container d-flex justify-content-around " style="margin-top: 135px;">
+
+        <div class="container2">
+            <div class="alert alert-success" role="alert">
+            </div>
+            <h1>Delete Data</h1>
+            <form id="emailForm" class="mb-3">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" style="width:109%" id="email1" name="email" required onfocus="this.value=''">
+                </div>
+              
+                <button type="button" class="btn btn-primary deletebutton mt-2" >delete</button>
+            </form>
+    
+           
+        </div>
+
+        <form id="profileForm" class="mb-3 ">
+            <h1>User Profile Update</h1>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" style="width:109%" id="name" name="name" required onfocus="this.value=''">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" style="width:109%" id="email" name="email" required onfocus="this.value=''">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" class="form-control" style="width:109%" id="password" name="password" required onfocus="this.value=''">
+            </div>
+            <button type="button" class="btn btn-primary updatebutton" >Update</button>
+           
+        </form>
+        <div class="mb-3">
+           
+            <h1>Data Read</h1>
+            <ul id="dataList"></ul>
+            <button type="button" class="btn btn-primary readbutton" >Read</button>
+        </div>
+    </div>
+        
+      
+    
+    
+    
+    <script src="../jsfile/crud2.js">
+   
+    </script>
+
+    <!-- Include Bootstrap JS and jQuery (optional) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
